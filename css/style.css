@@ -186,26 +186,41 @@ main  .rotate .wave{
 main .container .box-img, main .container .text{
     height: 520px;
 
-    border: 2px black dashed;
 }
 
 main .container .box-img{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    background-color: #275df1;
+
+    width: 900px;
+    min-width: 900px;
+}
+
+main .container .box-img-reverse{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
     width: 900px;
     min-width: 900px;
 }
 
 main  .central-box .container .text{
-    display: flex;
-    flex-wrap: wrap;
 
+    flex-wrap: wrap;
     flex-grow: 1;
 
     font-size: 20px;
-    background-color: #FFC0CB;
+}
+
+.container .text h2{
+    font-size: 45px;
+    margin-bottom:35px ;
+}
+
+.container .text p{
+    line-height: 1.2em;
 }
 
 main  .central-box:nth-child(4) .text{
@@ -218,22 +233,77 @@ main .big-rectangle{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 
-    height: 1042px;
+    height: 1250px;
     padding: 0 40px;
 
     background-color: #D3D3D3;
 }
 
+
 main .big-rectangle .green-rectangle{
     display: flex;
     justify-content: center;
-
-    height: 930px;
+    flex-wrap: wrap;
+    
+    height: 1150px;
     width: 1250px;
+}
 
-    background-color:#228B22 ;
-    border: 2px black dashed;
+main .green-rectangle .text{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    width: 1000px;
+}
+
+main .green-rectangle h2{
+    font-size: 45px;
+    font-weight: 600;
+
+    margin-bottom: 30px;
+}
+
+main .green-rectangle p{
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.2em;
+}
+main .green-rectangle img{
+    height: 770px;
+
+}
+
+main .green-rectangle .stars{
+    text-align: center;
+}
+
+main .green-rectangle .stars h3{
+    font-size: 25px;
+    font-weight: 900;
+    background-image:url(../img/stars.svg);
+    background-position:center;
+    background-size: 100%;
+    
+    padding: 13px 30px 0;
+    margin-bottom: 55px;
+
+}
+
+main .green-rectangle .stars .link-central-box{
+    font-size: 20px;
+    font-weight: 100;
+
+    border-radius: 50px;
+    border: none;
+
+    padding: 10px 15px;
+    margin: 0 15px;
+
+    background-color: #8EA1E1;
+    color: white;
 }
 
 /* information grid */
@@ -245,7 +315,6 @@ main .grid{
     padding: 0 40px;
 
     background-color:#23272A ;
-    border-bottom:  2px white solid;
 }
 
 main .grid .box{
@@ -254,23 +323,60 @@ main .grid .box{
     height: 520px;
     width: 1255px;
 
-    margin-top: 10px;
-    margin-bottom: 40px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+
+    border-bottom:1px solid #8EA1E1;
 }
 
 main .grid .box .social{
     width: 375px;
 
-    background-color: #F08080;
-    border: 2px black dashed;
+    color: white;
 }
 
-main .grid .box .information{
-    /* width: 220px; */
-    flex-grow: 1;
+main .grid .box .social h4{
+    font-size: 35px;
+    color:#7289DA;
+}
 
-    background-color:#20B2AA ;
-    border: 2px white dashed;
+main .box .social .lang{
+    display: flex;
+    justify-content: baseline;
+    padding: 20px 0;
+    gap: 4px;
+}
+
+.social .lang .flag-ita img{
+    height:15px;
+}
+
+.social .lang p, .social .lang i{
+    font-size: small;
+}
+
+.social  div i{
+    margin-right: 15px;
+    font-size: large;
+    
+}
+
+main .grid .box .information ul{
+    flex-grow: 1;
+    list-style-type: none;
+    margin-right: 100px;
+    margin-top: 10px;
+
+    color: white;
+}
+
+.information li:first-child{
+    color:#7289DA ;
+
+}
+
+ul li{
+    margin-bottom: 10px;
 }
 
 /* page's footer */
@@ -278,9 +384,7 @@ main .grid .box .information{
 footer{
     display: flex;
     justify-content: center;
-    align-content: flex-end;
-
-    padding: 0 40px;
+    align-content: flex-start;
 
     background-color:#23272A;
 }
@@ -288,14 +392,10 @@ footer{
 footer .foot-container{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 
     width: 1250px;
     height: 80px;
-    margin-top: 30px;
-
-    background-color:#7FFFD4 ;
-    border: 2px black dashed;
 }
 
 footer .foot-container .foot-link{
@@ -304,9 +404,18 @@ footer .foot-container .foot-link{
     align-items: center;
 
     height: 35px;
-    width: 70px;
-    padding: 5px;
-
-    background-color: #FFB6C1;
-    border: 2px black dashed;
 }
+
+.foot-link img{
+    height:35px ;
+}
+
+.foot-link .login{
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    background-color: #8EA1E1;
+    color: white;
+
+}
+
