@@ -175,7 +175,7 @@ main .wave{
     display: block;
     height: 100px;
     width: 100%;
-    filter: invert(94%) sepia(1%) saturate(900%) hue-rotate(318deg) brightness(90%) contrast(93%);
+    filter: invert(65%) sepia(98%) saturate(5%) hue-rotate(13deg) brightness(104%) contrast(103%);
 }
 
 main  .rotate .wave{
