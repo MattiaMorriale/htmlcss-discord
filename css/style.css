@@ -166,30 +166,49 @@ main .container{
 
 }
 
-main  .central-box:nth-child(3){
+main  .central-box:nth-child(4){
     background-color: #D3D3D3;
     
 }
 
-main .container .img, main .container .text{
+main .wave{
+    display: block;
+    height: 100px;
+    width: 100%;
+    filter: invert(94%) sepia(1%) saturate(900%) hue-rotate(318deg) brightness(90%) contrast(93%);
+}
+
+main  .rotate .wave{
+    transform: rotate(180deg);
+
+}
+
+main .container .box-img, main .container .text{
     height: 520px;
 
     border: 2px black dashed;
 }
 
-main  .central-box .container .img{
-    width: 750px;
-
-    background-color: #1E90FF;
+main .container .box-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #275df1;
+    width: 900px;
+    min-width: 900px;
 }
 
 main  .central-box .container .text{
+    display: flex;
+    flex-wrap: wrap;
+
     flex-grow: 1;
 
+    font-size: 20px;
     background-color: #FFC0CB;
 }
 
-main  .central-box:nth-child(3) .text{
+main  .central-box:nth-child(4) .text{
     order: -1;
 }
 
