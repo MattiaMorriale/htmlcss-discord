@@ -55,9 +55,9 @@ nav .menù a{
 }
 
 nav .menù .login{
-    padding: 8px 10px;
+    padding: 10px 15px;
     border-radius: 20px;
-    border: white solid 1px;
+    border: none;
 }
 
 
@@ -85,7 +85,7 @@ main .header-box{
     background-image: url(../img/jumbo.png);
     background-size: cover;
 
-    padding: 0 40px;
+    padding: 0 40px 0;
 }
 
 main .header-box:first-child{
@@ -93,17 +93,53 @@ main .header-box:first-child{
     align-items: center;
 
     height: 520px;
-
-    background-color: #00008B;
-
 }
 
 main .header-box .rectangle{
+    text-align: center;
     height: 410px;
     width: 950px;
 
-    background-color: #EE82EE;
-    border: 2px black dashed;
+    padding: 0px 30px 0;
+    
+}
+
+main .header-box .rectangle h1{
+    font-weight: 800;
+    font-size: 50px;
+    color: white;
+    margin-top: 60px;
+}
+
+main .header-box .rectangle p{
+    
+    margin: 40px 60px 30px;
+    
+    color: white;
+    font-size: 20px;
+
+    line-height: 1.2em;
+
+}
+
+main .header-box .rectangle .link-header-box{
+    font-size: 22px;
+    font-weight: 100;
+
+    border-radius: 50px;
+    border: none;
+
+    padding: 15px 35px;
+    margin: 0 15px;
+}
+
+main .header-box .rectangle .link-header-box:last-child{
+    background-color:#23272A ;
+    
+    padding: 17px 35px;
+
+    color: white;
+
 }
 
 /* div central */
