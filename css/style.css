@@ -10,12 +10,12 @@
 
 nav{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 
-    height: 60px;
-    max-height: 60px;
-    padding: 0 40px;
+    height: 120px;
+    padding:  0 40px;
+    padding-top: 15px;
     
     background-color:#275df1;
 }
@@ -26,6 +26,7 @@ nav .container{
     align-items: center;
     justify-content: center;
     width: 1400px;
+
     
     background-color:#275df1;
 }
@@ -40,7 +41,6 @@ nav .menù{
     flex-direction: row;
     
     background-color: #275df1;
-    border: 2px dashed black;
 }
 
 nav .menù .logo{
