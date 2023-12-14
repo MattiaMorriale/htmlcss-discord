@@ -13,7 +13,6 @@ nav{
     align-items: flex-start;
     justify-content: center;
 
-    height: 120px;
     padding:  0 40px;
     padding-top: 15px;
     
@@ -25,7 +24,7 @@ nav .container{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1400px;
+    flex-grow: 1;
 
     
     background-color:#275df1;
@@ -63,7 +62,7 @@ nav .menù .login{
 
 
 nav .men, nav .menù:last-child{
-    width: 250px;
+    width: 175px;
 }
 
 nav .menù:last-child{
@@ -172,8 +171,7 @@ main  .central-box:nth-child(4){
 }
 
 main .wave{
-    display: block;
-    height: 100px;
+    display: flex;
     width: 100%;
     filter: invert(65%) sepia(98%) saturate(5%) hue-rotate(13deg) brightness(104%) contrast(103%);
 }
@@ -183,17 +181,12 @@ main  .rotate .wave{
 
 }
 
-main .container .box-img, main .container .text{
-    height: 520px;
-
-}
 
 main .container .box-img{
     display: flex;
     justify-content: flex-start;
     align-items: center;
 
-    width: 900px;
     min-width: 900px;
 }
 
@@ -247,8 +240,6 @@ main .big-rectangle .green-rectangle{
     justify-content: center;
     flex-wrap: wrap;
     
-    height: 1150px;
-    width: 1250px;
 }
 
 main .green-rectangle .text{
@@ -256,7 +247,7 @@ main .green-rectangle .text{
     justify-content: center;
     flex-wrap: wrap;
     
-    width: 1000px;
+    padding: 0 230px;
 }
 
 main .green-rectangle h2{
@@ -320,9 +311,9 @@ main .grid{
 main .grid .box{
     display: flex;
 
-    height: 520px;
     width: 1255px;
 
+    padding-bottom: 150px;
     margin-top: 100px;
     margin-bottom: 30px;
 
