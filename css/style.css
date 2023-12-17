@@ -227,6 +227,7 @@ main .big-rectangle{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    flex-grow: 1;
 
     height: 1250px;
     padding: 0 40px;
@@ -239,10 +240,13 @@ main .big-rectangle .green-rectangle{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
+    max-width: 1540px;
     
 }
 
 main .green-rectangle .text{
+    display: block;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -263,11 +267,13 @@ main .green-rectangle p{
     line-height: 1.2em;
 }
 main .green-rectangle img{
+    display: block;
     height: 770px;
 
 }
 
 main .green-rectangle .stars{
+    display: block;
     text-align: center;
 }
 
